@@ -1,0 +1,30 @@
+@import "../../../../../scss/variables/theme-colours";
+.navbar {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(0deg, lighten($primary, 10%), darken($primary, 10%));
+  z-index: 1050;
+}
+
+.navbar-translate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.dropdown-toggle {
+  color:  $light;
+}
+
+//.navbar .dropdown.show .dropdown-menu {
+//  transform: translate3d(0, 15px, 0) !important;
+//  left: -1.5rem !important;
+//}
+//
+//.dropdown-menu {
+//  position: absolute;
+//  top: 2em !important;
+//}

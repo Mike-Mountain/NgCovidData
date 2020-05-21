@@ -1,0 +1,20 @@
+$primary-color: #ff6200;
+$success-color: #00c71b;
+$info-color: #2b7ca3;
+$warning-color: #e6bc05;
+$danger-color: #ab0000;
+
+$primary: $primary-color;
+$success: $success-color;
+$info: $info-color;
+$warning: $warning-color;
+$danger: $danger-color;
+$secondary: #38445c;
+$dark: #343a40;
+$light: #f8f9fa;
+
+$black: rgba(0, 0, 0);
+
+$text-shadow: 0 1px 1px rgba($black, 0.8), 0 0 1px rgba($black, 0.8);
+$box-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
+$inset-box-shadow: inset 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);

@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg">
+
+  <div class="navbar-translate">
+    <div class="navbar-header">
+      <a class="navbar-brand text-light" [routerLink]="['/presentation']">NG Covid Data</a>
+    </div>
+    <button
+      class="navbar-toggler navbar-burger"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarToggler"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="sidebarToggle()"
+    >
+      <span class="navbar-toggler-bar bar1"></span>
+      <span class="navbar-toggler-bar bar2"></span>
+      <span class="navbar-toggler-bar bar3"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav ml-auto">
+      <div class="nav-item" (click)="sidebarToggle()">
+        <a class="nav-link text-light" routerLink="/faq">
+          Data
+        </a>
+      </div>
+
+      <div ngbDropdown class="nav-item dropdown">
+        <div class="nav-link text-light" ngbDropdownToggle>Components</div>
+        <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
+          <a ngbDropdownItem [routerLink]="['/components']">All Components</a>
+          <a ngbDropdownItem [routerLink]="['/presentation']">Presentation</a>
+          <a ngbDropdownItem>Documentation</a>
+        </div>
+      </div>
+
+      <div class="nav-item" (click)="sidebarToggle()">
+        <a routerLink="/authentication/login">
+          <button class="nav-link btn btn-primary btn-outline-light text-light text-hover-dark">
+            View Source
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</nav>

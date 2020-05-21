@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import "scss/variables/all";
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html,
+body,
+.body-shell {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+.body-shell {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+.body-content {
+  overflow-y: auto;
+}
+
+.text-hover-dark:hover {
+  color: $dark !important;
+}
+
+.card:not(.card-plain):hover {
+  transform: translateY(0) !important;
+}
